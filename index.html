@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
 </head>
 <body>
     <h1>Research References</h1>
-    <p>Click "Show LaTeX" to view citations.</p>
+    <p>Click "Show LaTeX" to view citations. Click "Copy" to copy LaTeX code.</p>
 
     <h2>References</h2>
 
@@ -15,29 +16,33 @@
     <a href="#">Show LaTeX</a>
     <div class="latex" style="display:none">
     <pre>
-@book{smith2020deep,
-  author    = {Smith, J.},
-  title     = {Deep Learning for Image Recognition},
-  year      = {2020},
-  publisher = {Springer}
+@inproceedings{alchieri2023video,
+ author = {Alchieri, Leonardo and Celona, Luigi and Bianco, Simone},
+ year = {2024},
+ pages = {255-269},
+ title = {Video-Based Emotion Estimation Using Deep Neural Networks: A Comparative Study},
+ publisher = {Springer Nature Switzerland},
+ isbn = {978-3-031-51023-6},
+ booktitle = {Image Analysis and Processing - ICIAP 2023 Workshops},
+ doi = {10.1007/978-3-031-51023-6_22},
 }
     </pre>
+    <button class="copy-btn" data-latex="@book{smith2020deep, author = {Smith, J.}, title = {Deep Learning for Image Recognition}, year = {2020}, publisher = {Springer} }">📋 Copy</button>
     </div>
 
     <p><b>Doe, J., & Brown, M. (2021).</b> <i>A survey on explainable AI.</i> IEEE Transactions on Neural Networks.</p>
     <a href="#">Show LaTeX</a>
     <div class="latex" style="display:none">
     <pre>
-@article{doe2021survey,
-  author    = {Doe, J. and Brown, M.},
-  title     = {A Survey on Explainable AI},
-  journal   = {IEEE Transactions on Neural Networks},
-  year      = {2021},
-  volume    = {32},
-  number    = {4},
-  pages     = {1234-1245}
+@inproceedings{colombo2024arm,
+ author = {Colombo, Andrea and Celona, Luigi and Bianco, Simone and Nocera, Antonino and Napoletano, Paolo},
+ year = {2024},
+ title = {Arm Gesture Recognition With Smartwatches},
+ organization = {IEEE},
+ booktitle = {8th International Forum on Research and Technologies for Society and Industry (RTSI)},
 }
     </pre>
+    <button class="copy-btn" data-latex="@article{doe2021survey, author = {Doe, J. and Brown, M.}, title = {A Survey on Explainable AI}, journal = {IEEE Transactions on Neural Networks}, year = {2021}, volume = {32}, number = {4}, pages = {1234-1245} }">📋 Copy</button>
     </div>
 </body>
 </html>
