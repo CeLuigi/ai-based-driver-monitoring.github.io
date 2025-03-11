@@ -1,5 +1,63 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.css");
 
+img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px; /* Space between video and text */
+    max-width: 80%;
+    margin: auto;
+}
+
+.video-wrapper {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16/9;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.description {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    background-color: #f4f4f4;
+}
+
 body {
     background-color: #f6f8fa;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -49,7 +107,7 @@ h1, h2 {
 }
 
 .f4 {
-    font-size: 1.25rem;
+    font-size: 1.0rem;
 }
 
 .btn {
@@ -74,7 +132,19 @@ h1, h2 {
     margin-top: 10px;
     color: #555; /* Optional: Change the color to make it subtle */
     text-align: center; /* Ensure authors are centered */
-    display: flex; /* Use flexbox to align items on the same line */
     justify-content: center; /* Space authors evenly */
     gap: 30px; /* Adjust the space between authors */
+    margin-bottom: 2px;
+}
+
+.authors sup {
+    font-size: .9rem; /* Slightly larger font for authors */
+}
+
+.affiliations {
+    margin-top: 2px; 
+    font-size: .9rem;
+    font-style: italic;
+    text-align: center; /* Ensure authors are centered */
+    justify-content: center; /* Space authors evenly */    
 }

@@ -10,22 +10,87 @@
 </head>
 <body>
     <div class="container-lg px-3 my-5">
+        <div class="logos">
+            <a href="https://islab.disco.unimib.it/" target="_blank"><img src="assets/islab_web.png" alt="ISLab Logo" class="logo" height=50px></a>
+            <a href="http://www.ivl.disco.unimib.it/" target="_blank"><img src="assets/ivl-mini.jpg" alt="IVL Logo" class="logo" height=50px></a>
+        </div>
         <h1>AI-based Driver Monitoring</h1>
         <p class="authors">
-        Luigi Celona &nbsp;&nbsp;&nbsp; Simone Bianco &nbsp;&nbsp;&nbsp; Paolo Napoletano
+        Luigi Celona<sup>1</sup>&nbsp;&nbsp;&nbsp;Simone Bianco<sup>2</sup>&nbsp;&nbsp;&nbsp; Paolo Napoletano<sup>1</sup>
+        </p>
+        <p class="affiliations">
+            <sup>1</sup>Intelligent Sensing Laboratorry, University of Milano-Bicocca, Milan, Italy
+            <br>
+            <sup>2</sup>Imaging and Vision Laboratory, University of Milano-Bicocca, Milan, Italy
         </p>
 <br>
 <p class="f4">This research aims to develop an efficient, non-invasive driver monitoring system that detects distraction and stress in real time, seamlessly adapting to different vehicles without requiring extensive calibration. By integrating multi-modal data processing into a compact, embedded solution, the project enhances road safety while enabling scalable applications across the automotive and transportation sectors, ultimately contributing to safer and more sustainable driving.</p>
 <br>
-        <h2>📚 References</h2>
-        <p>Click "Show LaTeX" to reveal citations. Click "📋 Copy" to copy the LaTeX code.</p>
-        
-        <ul class="list-style-none">
-            <!-- Reference 1 -->
-            <li class="Box Box--spacious p-3 mb-3">
-                <details>
-                    <summary class="f4">📖 Colombo, A., Celona, L., Bianco, S., Nocera, A., & Napoletano, P. (2024, September). Arm Gesture Recognition with Smartwatches. In <i>2024 IEEE 8th Forum on Research and Technologies for Society and Industry Innovation (RTSI)</i> (pp. 625-629). IEEE.</summary>
-                    <pre class="p-2 mt-2">
+
+
+<h2>Demo</h2>
+<div class="container">
+    <div class="video-wrapper">
+        <iframe src="https://drive.google.com/file/d/1IVu3mwb67fY8kYxvWcKCaPiIQzQZw4qe/preview" 
+                    allow="autoplay">
+        </iframe>
+    </div>
+    <div class="description">
+        <p><strong>The demonstration features a driving session using our simulator.</strong></p>
+            <p>The board processes video frames captured by the RGB camera with the designed model and displays predictions for each frame on an LCD monitor (for illustration purposes only; in the final version, predictions will be transmitted to the car's black box).</p>
+            <p>Each prediction corresponds to one of 22 labels.</p>
+            <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Action</th>
+                <th>No.</th>
+                <th>Action</th>
+                <th>No.</th>
+                <th>Action</th>
+                <th>No.</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td> <td>Normal driving</td> <td>6</td> <td>Texting (right)</td> 
+                <td>12</td> <td>Smoking (left)</td> <td>18</td> <td>Operating GPS</td>
+            </tr>
+            <tr>
+                <td>1</td> <td>Sleeping</td> <td>7</td> <td>Hair / makeup</td> 
+                <td>13</td> <td>Smoking (right)</td> <td>19</td> <td>Reaching behind</td>
+            </tr>
+            <tr>
+                <td>2</td> <td>Yawning</td> <td>8</td> <td>Looking left</td> 
+                <td>14</td> <td>Smoking (mouth)</td> <td>20</td> <td>Hands off the steering wheel</td>
+            </tr>
+            <tr>
+                <td>3</td> <td>Talk with cellphone (left)</td> <td>9</td> <td>Looking right</td> 
+                <td>15</td> <td>Drinking / Eating (left)</td> <td>21</td> <td>Talking to passenger</td>
+            </tr>
+            <tr>
+                <td>4</td> <td>Talk with cellphone (right)</td> <td>10</td> <td>Looking up</td> 
+                <td>16</td> <td>Drinking / Eating (right)</td> <td></td> <td></td>
+            </tr>
+            <tr>
+                <td>5</td> <td>Texting (left)</td> <td>11</td> <td>Looking down</td> 
+                <td>17</td> <td>Adjusting radio</td> <td></td> <td></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<h2>📚 References</h2>
+<p>Click "Show LaTeX" to reveal citations. Click "📋 Copy" to copy the LaTeX code.</p>
+
+<ul class="list-style-none">
+    <!-- Reference 1 -->
+    <li class="Box Box--spacious p-3 mb-3">
+        <details>
+            <summary class="f4">📖 Colombo, A., Celona, L., Bianco, S., Nocera, A., & Napoletano, P. (2024, September). Arm Gesture Recognition with Smartwatches. In <i>2024 IEEE 8th Forum on Research and Technologies for Society and Industry Innovation (RTSI)</i> (pp. 625-629). IEEE.</summary>
+            <pre class="p-2 mt-2">
 @inproceedings{colombo2024arm,
  author = {Colombo, Andrea and Celona, Luigi and Bianco, Simone and Nocera, Antonino and Napoletano, Paolo},
  year = {2024},
